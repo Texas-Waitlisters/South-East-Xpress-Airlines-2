@@ -1,0 +1,19 @@
+ul{ list-style-type: none; }
+
+.row {
+  list-style-type: none;
+}
+
+.row li {
+  display: inline-block;
+  font-size: 30px;
+  style: none;
+}
+
+.seat {
+  background-color: #9ae293;
+}
+
+.right {
+  margin-left: 50%;
+}
