@@ -1,30 +1,28 @@
 body {
-  background-image: url("plane.jpg");
+  background-image: url("plane.png");
+  background-repeat: no-repeat;
+  background-color: #474747;
+  background-attachment: fixed;
+  background-position: center;
 }
-
 
 .row {
-  list-style-type: none;
-  background-color: #cccccc;
+    display: inline-block;
+    float:left;
 }
 
-.row li {
-  display: inline-block;
-  font-size: 30px;
-  style: none;
-  margin-left: 10px;
-  margin-right: 10px;
+.left {
+  width: 27.7%;
+  padding-left: 20%;
 }
 
-.seat {
-  background-color: #9ae293;
-  color: black;
-  font-size: 30px;
-  height: 500px;
+.right {
+  width: 27.7%;
+  padding-right: 20%
 }
 
 button {
-  color: green;
+  background: blue;
 }
 
 .seat:active,
@@ -37,6 +35,27 @@ button {
   background-color: red;
 }
 
-#right {
-  margin-left: 51%;
+.seat {
+  width: 65px;
+  height: 65px;
+	background-color:#44c767;
+	-moz-border-radius:1px;
+	-webkit-border-radius:1px;
+	border-radius:8px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:30px;
+	padding:2px 1px;
+	text-decoration:none;
+	text-shadow:1px 1px 4px #2f6627;
+}
+.seat:hover {
+	background-color:#5cbf2a;
+}
+.seat:active {
+	position:relative;
+	top:1px;
 }
