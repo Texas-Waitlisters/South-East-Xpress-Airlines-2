@@ -2,6 +2,7 @@
   <head>
      <link rel="stylesheet" href="style.css">
      <link rel="stylesheet" href="grid.css">
+     <script src="fillSeats.js"></script>
   </head>
   <body>
 
@@ -81,13 +82,13 @@
         </tr>
         <tr>
           <th><button id="D11" class="seat" name="empty" onclick="changeColor('D11')">D11</button></th>
-          <th><button id="E11" class="seat" name="empty" onclick="changeColor('e11')">E11</button></th>
+          <th><button id="E11" class="seat" name="empty" onclick="changeColor('E11')">E11</button></th>
           <th><button id="F11" class="seat" name="empty" onclick="changeColor('F11')">F11</button></th>
         </tr>
         <tr>
           <th><button id="D12" class="seat" name="empty" onclick="changeColor('D12')">D12</button></th>
           <th><button id="E12" class="seat" name="empty" onclick="changeColor('E12')">E12</button></th>
-          <th><button id="F12" class="seat" name="empty" onclick="changeColor('C12')">F12</button></th>
+          <th><button id="F12" class="seat" name="empty" onclick="changeColor('F12')">F12</button></th>
         </tr>
         <tr>
           <th><button id="D13" class="seat" name="empty" onclick="changeColor('D13')">D13</button></th>
@@ -137,18 +138,5 @@
       </table>
     </div>
   </body>
-
-  <script type="text/javascript">
-    function changeColor(seatName) {
-      var seat = document.getElementById(seatName);
-      if (seat.name === "empty") {
-        seat.name = "taken";
-        seat.style.background = 'red';
-      } else {
-        seat.name = "empty";
-        seat.style.background = '#44c767';
-      }
-    }
-  </script>
 
 </html>
