@@ -1,19 +1,42 @@
-ul{ list-style-type: none; }
+body {
+  background-image: url("plane.jpg");
+}
+
 
 .row {
   list-style-type: none;
+  background-color: #cccccc;
 }
 
 .row li {
   display: inline-block;
   font-size: 30px;
   style: none;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .seat {
   background-color: #9ae293;
+  color: black;
+  font-size: 30px;
+  height: 500px;
 }
 
-.right {
-  margin-left: 50%;
+button {
+  color: green;
+}
+
+.seat:active,
+.seat:hover {
+  /*background-color: #9c74db;*/
+  color: white;
+}
+
+.seat:visited {
+  background-color: red;
+}
+
+#right {
+  margin-left: 51%;
 }

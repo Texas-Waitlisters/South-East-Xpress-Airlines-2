@@ -1,27 +1,49 @@
 </html>
 <head>
    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="grid.css">
 </head>
 <body>
 
-<div class="col span-1-of-2"
+<div class="col span-1-of-2">
   <ul class ="row">
-     <li> <a class="seat">A10</a>
+     <li>
+       <button onclick="document.getElementById('myImage').src='red.jpg'">Turn on the light</button>
+
+<img id="myImage" src="green.png" style="width:100px">
+
+
+<button onclick="document.getElementById('myImage').src='green.png'">Turn off the light</button>
+
+<button id="A10" value=true onclick="changeColor(1A)">A10</button>
+
+<script type="text/javascript">
+  function changeColor(seatName) {
+    var seat = document.getElementById(seatName);
+    if (seat.value === true) {
+      seat.value = false;
+      seat.style.color = 'red';
+    } else {
+      seat.value = true;
+      seat.style.color = 'blue';
+    }
+  }
+</script>
      </li>
-     <li> <a class="seat">B10</a>
+     <li> <a class="seat" href="#">B10</a>
      </li>
-     <li><a class="seat">C10</a>
+     <li><a class="seat" href="#">C10</a>
      </li>
    </ul>
 </div>
 
-<div class="col span-1-of-2 right"
+<div id="right" class="col span-1-of-2 right">
   <ul class ="row">
-     <li> <a class="seat">D10</a>
+     <li> <a class="seat" href="#">D10</a>
      </li>
-     <li> <a class="seat">E10</a>
+     <li> <a class="seat" href="#">E10</a>
      </li>
-     <li><a class="seat">F10</a>
+     <li><a class="seat" href="#">F10</a>
      </li>
    </ul>
 </div>
